@@ -173,11 +173,4 @@ func process() {
 
 ---
 
-If you want next:
 
-* `defer` vs `try/finally`
-* `defer` in async/await
-* ARC + `deinit` edge cases
-* Retain cycles involving `defer`
-
-Just tell me 👌
