@@ -1,7 +1,7 @@
 
-# Swift `async / await` — Basics
+### Swift `async / await` — Basics
 
-## Why `async / await` Exists
+### Why `async / await` Exists
 
 Before Swift Concurrency, async code relied on callbacks:
 
@@ -25,7 +25,7 @@ Problems:
 
 ---
 
-## What `async` Means
+### What `async` Means
 
 ### Definition
 
@@ -43,9 +43,9 @@ This tells the compiler that calling this function may require suspension.
 
 ---
 
-## What `await` Means
+### What `await` Means
 
-### Definition
+#### Definition
 
 `await` marks a **suspension point**.
 
@@ -61,7 +61,7 @@ At this point:
 
 ---
 
-## Suspension vs Blocking
+### Suspension vs Blocking
 
 ### Blocking (Old Model)
 
@@ -79,7 +79,7 @@ At this point:
 
 ---
 
-## Execution Flow Example
+### Execution Flow Example
 
 ```swift
 func loadData() async {
@@ -99,7 +99,7 @@ Execution steps:
 
 ---
 
-## Async Code Is Sequential by Default
+### Async Code Is Sequential by Default
 
 ```swift
 let user = await fetchUser()
@@ -111,7 +111,7 @@ let posts = await fetchPosts()
 
 ---
 
-## Running Async Work Concurrently
+### Running Async Work Concurrently
 
 ```swift
 async let user = fetchUser()
@@ -126,7 +126,7 @@ let result = await (user, posts)
 
 ---
 
-## Async Error Handling
+### Async Error Handling
 
 ```swift
 func fetchUser() async throws -> User
@@ -148,7 +148,7 @@ do {
 
 ---
 
-## Why `await` Is Mandatory
+### Why `await` Is Mandatory
 
 Swift requires `await` because:
 
@@ -160,7 +160,7 @@ This makes async behavior explicit.
 
 ---
 
-## Threading Reality
+### Threading Reality
 
 ```swift
 print(Thread.current)
@@ -173,7 +173,7 @@ print(Thread.current)
 
 ---
 
-## Async Does NOT Mean Background
+### Async Does NOT Mean Background
 
 ```swift
 @MainActor
@@ -189,7 +189,7 @@ func loadData() async {
 
 ---
 
-## Rules to Remember
+### Rules to Remember
 
 1. `async` functions can suspend
 2. `await` marks suspension points
@@ -200,7 +200,7 @@ func loadData() async {
 
 ---
 
-## Common Mistakes
+### Common Mistakes
 
 * Assuming async means background execution
 * Forgetting `await`
@@ -210,7 +210,7 @@ func loadData() async {
 
 ---
 
-## Mental Model
+### Mental Model
 
 > **Async / await is about suspending functions, not threads.**
 
