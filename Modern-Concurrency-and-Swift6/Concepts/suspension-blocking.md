@@ -1,4 +1,4 @@
-````markdown
+
 ### Suspension vs Blocking
 
 ### What Is Blocking?
@@ -117,5 +117,4 @@ func loadData() async {
 * Swift suspends functions to protect threads
 * This enables safe, scalable concurrency
 
-```
-```
+
