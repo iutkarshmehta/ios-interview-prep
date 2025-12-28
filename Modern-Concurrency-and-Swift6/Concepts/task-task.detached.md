@@ -1,7 +1,7 @@
 
 ---
 
-## Big Picture (One Line)
+### Big Picture (One Line)
 
 > **`Task {}` is structured and inherits context.
 > `Task.detached {}` is unstructured and isolated.**
@@ -10,7 +10,7 @@ Everything else flows from this.
 
 ---
 
-## 1. `Task {}` — Structured Task
+### 1. `Task {}` — Structured Task
 
 ### What It Is
 
@@ -81,7 +81,7 @@ This should be your **default choice**.
 
 ---
 
-## 2. `Task.detached {}` — Unstructured Task
+### 2. `Task.detached {}` — Unstructured Task
 
 ### What It Is
 
@@ -139,7 +139,7 @@ Actor isolation is **broken intentionally**.
 
 ---
 
-## Why `Task.detached` Is Dangerous
+### Why `Task.detached` Is Dangerous
 
 Detached tasks:
 
@@ -152,7 +152,7 @@ They bring back **fire-and-forget concurrency**.
 
 ---
 
-## Cancellation Comparison
+### Cancellation Comparison
 
 ### `Task {}`
 
@@ -182,7 +182,7 @@ Task.detached {
 
 ---
 
-## Priority Behavior
+### Priority Behavior
 
 ### `Task {}`
 
