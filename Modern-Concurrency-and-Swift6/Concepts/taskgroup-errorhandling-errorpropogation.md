@@ -1,6 +1,6 @@
-# 1. `Task.isCancelled`
+### 1. `Task.isCancelled`
 
-## What it is
+### What it is
 
 `Task.isCancelled` is a **Boolean flag** that tells you:
 
@@ -20,7 +20,7 @@ Important:
 
 ---
 
-## Why it exists
+### Why it exists
 
 Swift uses **cooperative cancellation**:
 
@@ -35,7 +35,7 @@ This avoids:
 
 ---
 
-## Typical usage
+### Typical usage
 
 ```swift
 func longRunningTask() async {
@@ -56,9 +56,9 @@ Here:
 
 ---
 
-# 2. `Task.checkCancellation()`
+### 2. `Task.checkCancellation()`
 
-## What it is
+### What it is
 
 `Task.checkCancellation()` is the **throwing version** of cancellation checking.
 
@@ -73,7 +73,7 @@ If cancelled:
 
 ---
 
-## When to use it
+### When to use it
 
 Use it when:
 
@@ -83,7 +83,7 @@ Use it when:
 
 ---
 
-## Example
+### Example
 
 ```swift
 func loadData() async throws {
@@ -102,7 +102,7 @@ This makes cancellation:
 
 ---
 
-## Difference Between the Two
+### Difference Between the Two
 
 | Aspect        | `Task.isCancelled` | `Task.checkCancellation()` |
 | ------------- | ------------------ | -------------------------- |
@@ -112,9 +112,9 @@ This makes cancellation:
 
 ---
 
-# 3. Cancellation Propagation
+### 3. Cancellation Propagation
 
-## Core rule
+### Core rule
 
 > **Cancellation flows from parent to child tasks.**
 
@@ -122,7 +122,7 @@ This is possible only because of **task hierarchy**.
 
 ---
 
-## Example
+### Example
 
 ```swift
 Task {
@@ -140,7 +140,7 @@ If the parent task is cancelled:
 
 ---
 
-## What does NOT propagate
+### What does NOT propagate
 
 * Cancellation does NOT propagate to `Task.detached`
 * Detached tasks must be cancelled manually
@@ -149,9 +149,9 @@ This is why detached tasks are dangerous.
 
 ---
 
-# 4. `withTaskGroup`
+### 4. `withTaskGroup`
 
-## What is a Task Group?
+### What is a Task Group?
 
 A task group lets you:
 
@@ -169,7 +169,7 @@ await withTaskGroup(of: Int.self) { group in
 
 ---
 
-## Key guarantees
+### Key guarantees
 
 * All child tasks belong to the parent
 * The group cannot exit until all children finish
@@ -177,7 +177,7 @@ await withTaskGroup(of: Int.self) { group in
 
 ---
 
-## Collecting results
+### Collecting results
 
 ```swift
 await withTaskGroup(of: Int.self) { group in
@@ -195,9 +195,9 @@ await withTaskGroup(of: Int.self) { group in
 
 ---
 
-# 5. `withThrowingTaskGroup`
+### 5. `withThrowingTaskGroup`
 
-## Why it exists
+### Why it exists
 
 `withTaskGroup` does **not support throwing tasks**.
 
@@ -207,7 +207,7 @@ If child tasks can throw:
 
 ---
 
-## Example
+### Example
 
 ```swift
 try await withThrowingTaskGroup(of: Int.self) { group in
@@ -227,7 +227,7 @@ try await withThrowingTaskGroup(of: Int.self) { group in
 
 ---
 
-## Error behavior (Very Important)
+### Error behavior (Very Important)
 
 If **any child task throws**:
 
@@ -239,9 +239,9 @@ This is **fail-fast behavior**.
 
 ---
 
-# 6. Task Group Error Handling
+### 6. Task Group Error Handling
 
-## What happens on error
+### What happens on error
 
 ```swift
 try await withThrowingTaskGroup(of: Int.self) { group in
@@ -260,7 +260,7 @@ No partial success unless you design for it.
 
 ---
 
-## Designing for partial failure
+### Designing for partial failure
 
 If you want:
 
@@ -284,7 +284,7 @@ group.addTask {
 
 ---
 
-# Staff-Level Insight (Important)
+### Staff-Level Insight (Important)
 
 > **Task groups enforce correctness, not convenience.**
 
@@ -296,7 +296,7 @@ They:
 
 ---
 
-# Final Mental Model (Memorize This)
+### Final Mental Model (Memorize This)
 
 * Cancellation is cooperative
 * `Task.isCancelled` checks
