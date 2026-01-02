@@ -191,7 +191,141 @@
 
 ---
 
+# 🔹 Swift Fundamentals — 100 Interview Questions
 
+## 🧱 Basics & Syntax (1–15)
 
+1. What is Swift and why was it introduced?
+2. Difference between `let` and `var`
+3. What is type inference in Swift?
+4. What are optionals?
+5. Why does Swift have optionals?
+6. Different ways to unwrap an optional
+7. What is optional chaining?
+8. What is force unwrapping and why is it dangerous?
+9. Difference between `if let` and `guard let`
+10. What is `nil` in Swift?
+11. What are tuples and where are they used?
+12. What is a type alias?
+13. What is the difference between `==` and `===`?
+14. What is the use of semicolons in Swift?
+15. What is the Swift standard library?
+
+---
+
+## 🧠 Value vs Reference Types (16–30)
+
+16. Difference between `struct` and `class`
+17. Why are structs preferred in Swift?
+18. What are value semantics?
+19. What are reference semantics?
+20. How does copying work for structs?
+21. What is Copy-on-Write (CoW)?
+22. Which Swift types use CoW?
+23. How does mutation behave in structs?
+24. What is `mutating` keyword?
+25. Can a struct contain a class?
+26. Can a class contain a struct?
+27. How is memory managed for value types?
+28. When would you choose a class over a struct?
+29. What is identity vs equality?
+30. Why are enums value types?
+
+---
+
+## 🧩 Optionals & Safety (31–40)
+
+31. What is implicitly unwrapped optional?
+32. When should you use IUO?
+33. Difference between `Optional<T>` and `T?`
+34. What happens if you access a nil optional?
+35. What is `map` on optional?
+36. Difference between `map` and `flatMap` on optional
+37. What is `compactMap`?
+38. How does optional chaining fail gracefully?
+39. Can optionals be compared?
+40. How do optionals improve safety?
+
+---
+
+## 🧠 Functions & Closures (41–55)
+
+41. What is a function in Swift?
+42. What are external and internal parameter names?
+43. What are default parameter values?
+44. What are variadic parameters?
+45. What is an inout parameter?
+46. What is a closure?
+47. Difference between function and closure
+48. What is a trailing closure?
+49. What is an escaping closure?
+50. Why do we need `@escaping`?
+51. How do closures capture values?
+52. What is a capture list?
+53. What is `[weak self]`?
+54. What is `[unowned self]`?
+55. When do closures cause retain cycles?
+
+---
+
+## 💾 Memory Management & ARC (56–70)
+
+56. What is ARC?
+57. How does ARC work?
+58. What increases a reference count?
+59. What decreases a reference count?
+60. What is a retain cycle?
+61. Common retain cycle scenarios in iOS
+62. Difference between `strong`, `weak`, and `unowned`
+63. When does `weak` become nil?
+64. When does `deinit` get called?
+65. Can structs have `deinit`?
+66. Do value types participate in ARC?
+67. How do closures affect memory?
+68. What is an autorelease pool?
+69. How do you avoid memory leaks?
+70. How do you detect memory leaks?
+
+---
+
+## 🧬 Enums, Protocols & Extensions (71–85)
+
+71. What are enums in Swift?
+72. Difference between raw values and associated values
+73. Can enums have methods?
+74. What are protocols?
+75. What is protocol-oriented programming?
+76. What are protocol extensions?
+77. What are associated types?
+78. Protocol vs class inheritance
+79. Can protocols be inherited?
+80. What is `Any`?
+81. What is `AnyObject`?
+82. Difference between `some` and `any`
+83. What is an opaque return type?
+84. What are extensions used for?
+85. Limitations of extensions
+
+---
+
+## ⚙️ Control Flow & Advanced Basics (86–100)
+
+86. What is `defer`?
+87. When is `defer` executed?
+88. What is `switch` and how is it powerful in Swift?
+89. Can switch statements fall through?
+90. What are ranges in Swift?
+91. What is pattern matching?
+92. What are higher-order functions?
+93. Difference between `map`, `filter`, `reduce`
+94. What is lazy sequence?
+95. What is `lazy` keyword?
+96. What is `Codable`?
+97. Difference between `Encodable` and `Decodable`
+98. What is `Result` type?
+99. What is error handling in Swift?
+100. What is `throws`, `try`, `try?`, `try!`
+
+---
 
 
