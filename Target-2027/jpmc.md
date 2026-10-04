@@ -1,157 +1,226 @@
-# LeetCode Problems
+# Arrays & Hashing
 
-- **#780 — Reaching Points**
-  - Acceptance: 33.2%
-  - Difficulty: Hard
+* **#1 — Two Sum** — Easy
+* **#49 — Group Anagrams** — Medium
+* **#1200 — Minimum Absolute Difference** — Easy
+* **#1356 — Sort Integers by The Number of 1 Bits** — Easy
+* **#1481 — Least Number of Unique Integers after K Removals** — Medium
+* **#1710 — Maximum Units on a Truck** — Easy
+* **#2068 — Check Whether Two Strings are Almost Equivalent** — Easy
+* **#2273 — Find Resultant Array After Removing Anagrams** — Easy
+* **#2602 — Minimum Operations to Make All Array Elements Equal** — Medium
+* **#349 — Intersection of Two Arrays** — Easy
+* **#560 — Subarray Sum Equals K** — Medium
 
-- **#1529 — Minimum Suffix Flips**
-  - Acceptance: 73.3%
-  - Difficulty: Medium
+# Strings
 
-- **#1356 — Sort Integers by The Number of 1 Bits**
-  - Acceptance: 78.2%
-  - Difficulty: Easy
+* **#3 — Longest Substring Without Repeating Characters** — Medium
+* **#5 — Longest Palindromic Substring** — Medium
+* **#12 — Integer to Roman** — Medium
+* **#20 — Valid Parentheses** — Easy
+* **#49 — Group Anagrams** — Medium
+* **#1328 — Break a Palindrome** — Medium
+* **#1541 — Minimum Insertions to Balance a Parentheses String** — Medium
+* **#2038 — Remove Colored Pieces if Both Neighbors are the Same Color** — Medium
+* **#2068 — Check Whether Two Strings are Almost Equivalent** — Easy
+* **#2273 — Find Resultant Array After Removing Anagrams** — Easy
+* **#2696 — Minimum String Length After Removing Substrings** — Easy
 
-- **#2038 — Remove Colored Pieces if Both Neighbors are the Same Color**
-  - Acceptance: 62.8%
-  - Difficulty: Medium
+# Sliding Window / Two Pointers
 
-- **#1481 — Least Number of Unique Integers after K Removals**
-  - Acceptance: 62.9%
-  - Difficulty: Medium
+* **#3 — Longest Substring Without Repeating Characters** — Medium
+* **#2602 — Minimum Operations to Make All Array Elements Equal** — Medium
 
-- **#2068 — Check Whether Two Strings are Almost Equivalent**
-  - Acceptance: 63.7%
-  - Difficulty: Easy
+> #2602 is more specifically **sorting + binary search/prefix sums**, but it is useful to study alongside range/query problems.
 
-- **#1328 — Break a Palindrome**
-  - Acceptance: 51.8%
-  - Difficulty: Medium
+# Prefix Sum
 
-- **#1012 — Numbers With Repeated Digits**
-  - Acceptance: 42.1%
-  - Difficulty: Hard
+* **#560 — Subarray Sum Equals K** — Medium
+* **#2602 — Minimum Operations to Make All Array Elements Equal** — Medium
 
-- **#1200 — Minimum Absolute Difference**
-  - Acceptance: 69.5%
-  - Difficulty: Easy
+# Stack
 
-- **#2273 — Find Resultant Array After Removing Anagrams**
-  - Acceptance: 58.0%
-  - Difficulty: Easy
+* **#20 — Valid Parentheses** — Easy
+* **#1541 — Minimum Insertions to Balance a Parentheses String** — Medium
+* **#2696 — Minimum String Length After Removing Substrings** — Easy
+* **#2104 — Sum of Subarray Ranges** — Medium
 
-- **#357 — Count Numbers with Unique Digits**
-  - Acceptance: 53.0%
-  - Difficulty: Medium
+# Monotonic Stack
 
-- **#31 — Next Permutation**
-  - Acceptance: 40.0%
-  - Difficulty: Medium
+* **#2104 — Sum of Subarray Ranges** — Medium
 
-- **#1167 — Minimum Cost to Connect Sticks**
-  - Acceptance: 69.9%
-  - Difficulty: Medium
+> Important pattern: **next greater/smaller + contribution technique**.
 
-- **#2602 — Minimum Operations to Make All Array Elements Equal**
-  - Acceptance: 35.1%
-  - Difficulty: Medium
+# Intervals
 
-- **#1710 — Maximum Units on a Truck**
-  - Acceptance: 73.6%
-  - Difficulty: Easy
+* **#56 — Merge Intervals** — Medium
+* **#435 — Non-overlapping Intervals** — Medium
+* **#1200 — Minimum Absolute Difference** — Easy
 
-- **#1541 — Minimum Insertions to Balance a Parentheses String**
-  - Acceptance: 52.3%
-  - Difficulty: Medium
+# Greedy
 
-- **#2696 — Minimum String Length After Removing Substrings**
-  - Acceptance: 69.4%
-  - Difficulty: Easy
+* **#1529 — Minimum Suffix Flips** — Medium
+* **#1710 — Maximum Units on a Truck** — Easy
+* **#435 — Non-overlapping Intervals** — Medium
+* **#1328 — Break a Palindrome** — Medium
+* **#2038 — Remove Colored Pieces if Both Neighbors are the Same Color** — Medium
+* **#1481 — Least Number of Unique Integers after K Removals** — Medium
+* **#1541 — Minimum Insertions to Balance a Parentheses String** — Medium
 
-- **#752 — Open the Lock**
-  - Acceptance: 60.3%
-  - Difficulty: Medium
+# Sorting
 
-- **#412 — Fizz Buzz**
-  - Acceptance: 72.2%
-  - Difficulty: Easy
+* **#31 — Next Permutation** — Medium
+* **#1200 — Minimum Absolute Difference** — Easy
+* **#1356 — Sort Integers by The Number of 1 Bits** — Easy
+* **#1481 — Least Number of Unique Integers after K Removals** — Medium
+* **#1710 — Maximum Units on a Truck** — Easy
+* **#2602 — Minimum Operations to Make All Array Elements Equal** — Medium
+* **#435 — Non-overlapping Intervals** — Medium
+* **#56 — Merge Intervals** — Medium
 
-- **#2104 — Sum of Subarray Ranges**
-  - Acceptance: 61.1%
-  - Difficulty: Medium
+# Heap / Priority Queue
 
-- **#1268 — Search Suggestions System**
-  - Acceptance: 65.1%
-  - Difficulty: Medium
+* **#1167 — Minimum Cost to Connect Sticks** — Medium
+* **#1481 — Least Number of Unique Integers after K Removals** — Medium
+* **#1710 — Maximum Units on a Truck** — Easy
 
-- **#435 — Non-overlapping Intervals**
-  - Acceptance: 53.3%
-  - Difficulty: Medium
+# Binary Search
 
-- **#263 — Ugly Number**
-  - Acceptance: 41.9%
-  - Difficulty: Easy
+* **#2602 — Minimum Operations to Make All Array Elements Equal** — Medium
+* **#780 — Reaching Points** — Hard
 
-- **#56 — Merge Intervals**
-  - Acceptance: 47.4%
-  - Difficulty: Medium
+# BFS / Graph Traversal
 
-- **#560 — Subarray Sum Equals K**
-  - Acceptance: 43.6%
-  - Difficulty: Medium
+* **#752 — Open the Lock** — Medium
 
-- **#349 — Intersection of Two Arrays**
-  - Acceptance: 74.5%
-  - Difficulty: Easy
+# Backtracking
 
-- **#12 — Integer to Roman**
-  - Acceptance: 64.9%
-  - Difficulty: Medium
+* **#22 — Generate Parentheses** — Medium
 
-- **#202 — Happy Number**
-  - Acceptance: 56.2%
-  - Difficulty: Easy
+# Recursion / Divide & Conquer
 
-- **#5 — Longest Palindromic Substring**
-  - Acceptance: 33.9%
-  - Difficulty: Medium
+* **#50 — Pow(x, n)** — Medium
+* **#22 — Generate Parentheses** — Medium
 
-- **#49 — Group Anagrams**
-  - Acceptance: 68.6%
-  - Difficulty: Medium
+# Dynamic Programming
 
-- **#70 — Climbing Stairs**
-  - Acceptance: 52.9%
-  - Difficulty: Easy
+* **#70 — Climbing Stairs** — Easy
+* **#53 — Maximum Subarray** — Medium
+* **#5 — Longest Palindromic Substring** — Medium
+* **#357 — Count Numbers with Unique Digits** — Medium
 
-- **#53 — Maximum Subarray**
-  - Acceptance: 50.8%
-  - Difficulty: Medium
+# Math / Number Theory
 
-- **#22 — Generate Parentheses**
-  - Acceptance: 74.6%
-  - Difficulty: Medium
+* **#263 — Ugly Number** — Easy
+* **#202 — Happy Number** — Easy
+* **#50 — Pow(x, n)** — Medium
+* **#357 — Count Numbers with Unique Digits** — Medium
+* **#1012 — Numbers With Repeated Digits** — Hard
+* **#780 — Reaching Points** — Hard
+* **#12 — Integer to Roman** — Medium
 
-- **#50 — Pow(x, n)**
-  - Acceptance: 34.9%
-  - Difficulty: Medium
+# Bit Manipulation
 
-- **#121 — Best Time to Buy and Sell Stock**
-  - Acceptance: 53.7%
-  - Difficulty: Easy
+* **#1356 — Sort Integers by The Number of 1 Bits** — Easy
+* **#263 — Ugly Number** — Easy
 
-- **#242 — Valid Anagram**
-  - Acceptance: 64.6%
-  - Difficulty: Easy
+# Trie / Prefix Search
 
-- **#20 — Valid Parentheses**
-  - Acceptance: 40.6%
-  - Difficulty: Easy
+* **#1268 — Search Suggestions System** — Medium
 
-- **#3 — Longest Substring Without Repeating Characters**
-  - Acceptance: 34.8%
-  - Difficulty: Medium
+> This is particularly useful for understanding **Trie + prefix matching**.
 
-- **#1 — Two Sum**
-  - Acceptance: 52.6%
-  - Difficulty: Easy
+# String Matching / Anagram
+
+* **#242 — Valid Anagram** — Easy
+* **#49 — Group Anagrams** — Medium
+* **#2273 — Find Resultant Array After Removing Anagrams** — Easy
+* **#2068 — Check Whether Two Strings are Almost Equivalent** — Easy
+
+# Palindrome
+
+* **#5 — Longest Palindromic Substring** — Medium
+* **#1328 — Break a Palindrome** — Medium
+
+# Permutation / Combinatorics
+
+* **#31 — Next Permutation** — Medium
+* **#357 — Count Numbers with Unique Digits** — Medium
+* **#1012 — Numbers With Repeated Digits** — Hard
+* **#22 — Generate Parentheses** — Medium
+
+# Simulation / Implementation
+
+* **#412 — Fizz Buzz** — Easy
+* **#12 — Integer to Roman** — Medium
+* **#202 — Happy Number** — Easy
+* **#263 — Ugly Number** — Easy
+
+
+1. **Hashing**
+
+   * #1 Two Sum
+   * #242 Valid Anagram
+   * #49 Group Anagrams
+   * #349 Intersection of Two Arrays
+
+2. **Two Pointers / Sliding Window**
+
+   * #3 Longest Substring Without Repeating Characters
+
+3. **Arrays + Prefix Sum**
+
+   * #53 Maximum Subarray
+   * #560 Subarray Sum Equals K
+   * #2602 Minimum Operations...
+
+4. **Sorting + Intervals**
+
+   * #1200 Minimum Absolute Difference
+   * #56 Merge Intervals
+   * #435 Non-overlapping Intervals
+
+5. **Stack**
+
+   * #20 Valid Parentheses
+   * #1541 Minimum Insertions...
+   * #2696 Minimum String Length...
+
+6. **Greedy**
+
+   * #1529 Minimum Suffix Flips
+   * #1710 Maximum Units...
+   * #2038 Remove Colored Pieces
+   * #1481 Least Number of Unique Integers
+
+7. **Heap**
+
+   * #1167 Minimum Cost to Connect Sticks
+
+8. **Binary Search**
+
+   * #2602 Minimum Operations...
+   * #780 Reaching Points
+
+9. **Backtracking**
+
+   * #22 Generate Parentheses
+
+10. **Dynamic Programming**
+
+* #70 Climbing Stairs
+* #53 Maximum Subarray
+* #5 Longest Palindromic Substring
+
+11. **BFS**
+
+* #752 Open the Lock
+
+12. **Trie**
+
+* #1268 Search Suggestions System
+
+13. **Advanced Math / Digit DP**
+
+* #357 Count Numbers with Unique Digits
+* #1012 Numbers With Repeated Digits
